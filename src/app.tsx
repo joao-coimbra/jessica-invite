@@ -26,8 +26,8 @@ export function App() {
       </div>
       <a
         aria-label="Confirmar presença"
-        className="fixed flex items-center justify-center bottom-6 h-12 w-56 cursor-pointer rounded-md bg-rose-300 text-white"
-        href="https://wa.me/5514996707309?text=Confirmado%20%E2%9C%85%20Estarei%20presente%20no%20evento%20%F0%9F%8E%89%F0%9F%99%8C"
+        className="shadow-lg hover:bg-rose-500 duration-300 fixed flex items-center justify-center bottom-6 h-12 w-56 cursor-pointer rounded-md bg-rose-400 text-white"
+        href="https://wa.me/5514996707309?text=Confirmado!%20Estarei%20no%20evento.%0APode%20contar%20comigo!"
         rel="noopener"
         target="_blank"
       >
