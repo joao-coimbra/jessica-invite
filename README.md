@@ -1,69 +1,96 @@
-# React + TypeScript + Vite
+# 💌 Jessica Invite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive digital invitation web application built with **React**, **TypeScript**, and **Vite**. This project serves as a fast and interactive way to share event details and collect RSVPs.
 
-Currently, two official plugins are available:
+[![Deploy with Vercel](https://vercel.com/button)](https://convite-jessica.vercel.app)
+[![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+Check out the live application here:
+👉 **[https://convite-jessica.vercel.app](https://convite-jessica.vercel.app)**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Technologies Used
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+*   **[React](https://react.dev/)** - UI Library
+*   **[TypeScript](https://www.typescriptlang.org/)** - Static Type Checking
+*   **[Vite](https://vitejs.dev/)** - Next Generation Frontend Tooling
+*   **[Biome](https://biomejs.dev/)** - High-performance linter and formatter (configured via `biome.jsonc`)
+*   **[pnpm](https://pnpm.io/)** - Fast, disk space efficient package manager
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 💻 Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Follow these steps to set up the project locally on your machine.
+
+### Prerequisites
+
+Ensure you have the following installed:
+*   [Node.js](https://nodejs.org/) (Version 18+ recommended)
+*   [pnpm](https://pnpm.io/installation) (Preferred package manager)
+
+### Installation
+
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/joao-coimbra/jessica-invite.git
+    cd jessica-invite
+    ```
+
+2.  **Install dependencies**
+    ```bash
+    pnpm install
+    ```
+
+3.  **Run the development server**
+    ```bash
+    pnpm dev
+    ```
+    Open your browser and navigate to `http://localhost:5173`.
+
+## 🏗️ Building for Production
+
+To create an optimized build for deployment:
+
+```bash
+pnpm build
+```
+This will generate a `dist` folder containing the compiled assets ready to be hosted.
+
+To preview the production build locally:
+```bash
+pnpm preview
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📂 Project Structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+jessica-invite/
+├── .cursor/        # Editor configuration
+├── public/         # Static assets (favicons, images)
+├── src/            # Source code
+│   ├── main.tsx    # Entry point
+│   ├── App.tsx     # Main component
+│   └── ...         # Components and styles
+├── biome.jsonc     # Linter and formatter config
+├── index.html      # HTML entry point
+├── package.json    # Project dependencies and scripts
+└── vite.config.ts  # Vite configuration
 ```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+1.  Fork the repository.
+2.  Create a new branch (`git checkout -b feature/YourFeature`).
+3.  Commit your changes (`git commit -m 'Add some feature'`).
+4.  Push to the branch (`git push origin feature/YourFeature`).
+5.  Open a Pull Request.
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+*Developed by [Joao Coimbra](https://github.com/joao-coimbra)*
