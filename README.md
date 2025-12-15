@@ -91,6 +91,3 @@ Contributions are welcome! Please follow these steps:
 ## 📝 License
 
 This project is open source and available under the [MIT License](LICENSE).
-
----
-*Developed by [Joao Coimbra](https://github.com/joao-coimbra)*
